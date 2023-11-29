@@ -1,6 +1,6 @@
 import Github from '../public/github.svg'
 import Twitter from '../public/twitter.svg'
-import Linkedin from '../public/Linkedin.svg'
+import Linkedin from '../public/linkedin.svg'
 import FrontEndMentor from '../public/frontmentor.svg'
 
 function IconSection(props){
