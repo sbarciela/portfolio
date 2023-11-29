@@ -11,7 +11,6 @@ function IconSection(props){
         margin=null
     }
     
-
    
     return (
             <div className={`flex flex-wrap flex-col  justify-center items-center gap-5 z-10 md:flex-row md:justify-between md:relative ${margin}`}>
