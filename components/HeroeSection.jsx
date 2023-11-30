@@ -1,7 +1,7 @@
 import Image from "next/image"
 import IconSection from "./IconSection"
 import Patterns from "./Patterns"
-import profileImage from '../public/profile2.png'
+import profileImage from '../public/profilesb.png'
 
 
 function HeroeSection(){
