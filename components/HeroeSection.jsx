@@ -20,7 +20,9 @@ function HeroeSection(){
                                         priority={true}
                                         alt="Arrow"
                                         layout="responsive"
-                                        className="max-h-full"                                    
+                                        className="max-h-full" 
+                                        blurDataURL="/profilesb.png"
+                                        placeholder="blur"                                   
                                         
                                 />
                         </div>
