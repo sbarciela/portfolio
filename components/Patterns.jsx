@@ -16,7 +16,8 @@ function Patterns(){
         width={430}
         height={129}
         alt="Arrow"
-        className=" hidden absolute left-0 xl:block xl:top-[133px]"   
+        className=" hidden absolute left-0 xl:block xl:top-[133px]"
+        priority={true}   
         />
 
         <Image

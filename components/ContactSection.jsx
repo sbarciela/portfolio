@@ -38,6 +38,7 @@ function ContactSection(){
                                 id="name"
                                 placeholder="NAME"
                                 required
+                                autoComplete="on"
                                 pattern=".{3,}" 
                                 className="peer bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-4  outline-none invalid:[&:not(:placeholder-shown):not(:focus)]:border-light-red valid:border-green  " />
                                 <span className="hidden text-right text-sm text-light-red peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
@@ -54,6 +55,7 @@ function ContactSection(){
                                 id="email"
                                 placeholder="EMAIL"
                                 required
+                                autoComplete="on"
                                 pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
                                 className="peer bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-4 mt-8 outline-none invalid:[&:not(:placeholder-shown):not(:focus)]:border-light-red valid:border-green   " />
                                 <span className="hidden text-right text-sm text-light-red peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">

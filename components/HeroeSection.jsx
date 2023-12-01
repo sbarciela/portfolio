@@ -17,6 +17,7 @@ function HeroeSection(){
                         <div className="grid grid-cols-1 grid-rows-[minmax(242px,_280px)] items-end relative md:grid-rows-[minmax(450px,_450px)] xl:grid-rows-[minmax(618px,_618px)] ">
                                 <Image
                                         src={profileImage}
+                                        priority={true}
                                         alt="Arrow"
                                         layout="responsive"
                                         className="max-h-full"                                    
