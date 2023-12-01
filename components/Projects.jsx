@@ -7,7 +7,7 @@ function Projects(){
         <div className="md:mb-10">
             <div className="projectContainer relative">
                 <Image
-                src="/thumbnail-project-1-large.webp"
+                src="/weatherproject.png"
                 width={1080}
                 height={800}
                 alt="Arrow"
@@ -16,20 +16,21 @@ function Projects(){
                 />
                 
                 <div className="linksContainer absolute">
-                    <span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                    <span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span>
+                    <a href="https://weather-report-sb.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                    <a href="https://github.com/sbarciela/weather-app/" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
                 </div>
             </div>
             
 
-            <h2 className="text-hm text-white mt-5">DESIGN PORTFOLIO</h2>
+            <h2 className="text-hm text-white mt-5">WEATHER REPORT</h2>
             <div className="mt-[7px]">
                 <span className="text-m text-grey">HTML</span>
                 <span className="text-m text-grey ml-[18px]">CSS</span>
+                <span className="text-m text-grey ml-[18px]">JS</span>
             </div>
             <div className="flex mt-5 xl:hidden">
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span>
+                <a href="https://weather-report-sb.vercel.app/" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                <a href="https://github.com/sbarciela/weather-app/" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span></a>
             </div>
         </div>
 
@@ -37,7 +38,7 @@ function Projects(){
         <div className="md:mb-10">
             <div className="projectContainer relative">
                 <Image
-                src="/thumbnail-project-1-large.webp"
+                src="/bmiproject.png"
                 width={1080}
                 height={800}
                 alt="Arrow"
@@ -46,20 +47,21 @@ function Projects(){
                 />
                 
                 <div className="linksContainer absolute">
-                    <span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                    <span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span>
+                    <a href="https://bmi-calculator-sb.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                    <a href="https://github.com/sbarciela/bmi-calculator" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
                 </div>
             </div>
             
 
-            <h2 className="text-hm text-white mt-5">DESIGN PORTFOLIO</h2>
+            <h2 className="text-hm text-white mt-5">BMI CALCULATOR</h2>
             <div className="mt-[7px]">
                 <span className="text-m text-grey">HTML</span>
                 <span className="text-m text-grey ml-[18px]">CSS</span>
+                <span className="text-m text-grey ml-[18px]">JS</span>
             </div>
             <div className="flex mt-5 xl:hidden">
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span>
+                <a href="https://bmi-calculator-sb.vercel.app/" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                <a href="https://github.com/sbarciela/bmi-calculator" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span></a>
             </div>
         </div>
 
@@ -67,7 +69,7 @@ function Projects(){
        <div className="md:mb-10">
             <div className="projectContainer relative">
                 <Image
-                src="/thumbnail-project-1-large.webp"
+                src="/movflix-project.png"
                 width={1080}
                 height={800}
                 alt="Arrow"
@@ -76,20 +78,21 @@ function Projects(){
                 />
                 
                 <div className="linksContainer absolute">
-                    <span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                    <span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span>
+                    <a href="https://movflix.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                    <a href="https://github.com/sbarciela/movflix" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
                 </div>
             </div>
             
 
-            <h2 className="text-hm text-white mt-5">DESIGN PORTFOLIO</h2>
+            <h2 className="text-hm text-white mt-5">MOVFLIX DATABASE</h2>
             <div className="mt-[7px]">
                 <span className="text-m text-grey">HTML</span>
                 <span className="text-m text-grey ml-[18px]">CSS</span>
+                <span className="text-m text-grey ml-[18px]">JS</span>
             </div>
             <div className="flex mt-5 xl:hidden">
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span>
+                <a href="https://movflix.vercel.app/" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                <a href="https://github.com/sbarciela/movflix" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span></a>
             </div>
         </div>
 
@@ -97,7 +100,7 @@ function Projects(){
        <div className="md:mb-10">
             <div className="projectContainer relative">
                 <Image
-                src="/thumbnail-project-1-large.webp"
+                src="/todoproject.png"
                 width={1080}
                 height={800}
                 alt="Arrow"
@@ -106,20 +109,21 @@ function Projects(){
                 />
                 
                 <div className="linksContainer absolute">
-                    <span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                    <span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span>
+                    <a href="https://todo-list-sb.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                    <a href="https://github.com/sbarciela/todo_list" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
                 </div>
             </div>
             
 
-            <h2 className="text-hm text-white mt-5">DESIGN PORTFOLIO</h2>
+            <h2 className="text-hm text-white mt-5">TO DO APP</h2>
             <div className="mt-[7px]">
                 <span className="text-m text-grey">HTML</span>
                 <span className="text-m text-grey ml-[18px]">CSS</span>
+                <span className="text-m text-grey ml-[18px]">JS</span>
             </div>
             <div className="flex mt-5 xl:hidden">
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span>
-                <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span>
+                <a href="https://todo-list-sb.vercel.app/" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                <a href="https://github.com/sbarciela/todo_list" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span></a>
             </div>
         </div>
         </>

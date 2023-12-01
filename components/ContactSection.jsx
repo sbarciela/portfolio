@@ -24,7 +24,7 @@ function ContactSection(){
                     className=" hidden absolute left-[-100px] xl:block xl:top-[327px]"   
                     />
 
-                    <div className="text-center xl:text-left">
+                    <div className="text-center xl:text-left" id="contact">
                         <h2 className="text-mobh text-white mb-5 md:text-[72px] md:leading-[72px] md:tracking-[-2.05px] ">Contact</h2>
                         <p className="text-mobm text-grey md:text-m">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
                     </div>
@@ -40,7 +40,7 @@ function ContactSection(){
                                 required
                                 pattern=".{3,}" 
                                 className="peer bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-4  outline-none invalid:[&:not(:placeholder-shown):not(:focus)]:border-light-red valid:border-green  " />
-                                <span class="hidden text-right text-sm text-light-red peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                                <span className="hidden text-right text-sm text-light-red peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                                 Please enter a valid name
                                 </span>
                                 <InvalidIcon className="hidden absolute right-0 top-0 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block" />
