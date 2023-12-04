@@ -42,7 +42,7 @@ function HeroeSection(){
             <div className="text-center md:text-left md:max-w-[443px] md:relative md:z-10 md:mt-[90px] xl:mt-[127px] xl:max-w-[709px]">
                 <p className="text-mobh text-white md:text-[72px] md:leading-[72px] md:tracking-[-2.05px] xl:text-hxl "><span className="md:block xl:inline">Nice to</span> meet you! I'm <span className="underline decoration-green decoration-4 underline-offset-4">Sebastián Barciela.</span></p>
                 <p className="text-mobm text-grey my-6 md:text-m xl:mt-[43px] xl:mb-[66px] xl:max-w-[445px]">Based in Argentina, I'm a front-end developer passionate about building accessible web apps that users love.</p>
-                <a href="#contact"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer hover:text-green">CONTACT ME</span></a>
+                <a href="#contact"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green">CONTACT ME</span></a>
             </div>
             
         </div>

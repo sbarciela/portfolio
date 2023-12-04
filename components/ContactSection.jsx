@@ -75,7 +75,7 @@ function ContactSection(){
                             className="bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-[81px] mt-8 resize-none outline-none  invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500  " />
                         </label>
                         <div className="text-right mb-[99px] mt-8">
-                            <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">SEND MESSAGE</span>
+                            <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">SEND MESSAGE</span>
                         </div>
                     </form>
                 </div>

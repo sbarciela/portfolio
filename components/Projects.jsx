@@ -17,7 +17,7 @@ function Projects(){
                 
                 <div className="linksContainer absolute">
                     <a href="https://weather-report-sb.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
-                    <a href="https://github.com/sbarciela/weather-app/" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
+                    <a href="https://github.com/sbarciela/weather-app/" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
                 </div>
             </div>
             
@@ -48,7 +48,7 @@ function Projects(){
                 
                 <div className="linksContainer absolute">
                     <a href="https://bmi-calculator-sb.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
-                    <a href="https://github.com/sbarciela/bmi-calculator" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
+                    <a href="https://github.com/sbarciela/bmi-calculator" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
                 </div>
             </div>
             
@@ -79,7 +79,7 @@ function Projects(){
                 
                 <div className="linksContainer absolute">
                     <a href="https://movflix.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
-                    <a href="https://github.com/sbarciela/movflix" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
+                    <a href="https://github.com/sbarciela/movflix" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW CODE</span></a>
                 </div>
             </div>
             
@@ -110,7 +110,7 @@ function Projects(){
                 
                 <div className="linksContainer absolute">
                     <a href="https://todo-list-sb.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
-                    <a href="https://github.com/sbarciela/todo_list" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold lehover:text-green cursor-pointerading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ">VIEW CODE</span></a>
+                    <a href="https://github.com/sbarciela/todo_list" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW CODE</span></a>
                 </div>
             </div>
             
