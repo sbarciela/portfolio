@@ -1,8 +1,23 @@
 import Image from "next/image"
 import IconSection from "./IconSection"
 import InvalidIcon from '../public/invalidIcon.svg'
+import { useState } from "react"
 
 function ContactSection(){
+    const[name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+    const handleSubmit = () => {
+        console.log("Call send API here")
+      }
+    
+    const submitForm =()=>{
+        handleSubmit()
+    }  
+
+    
+
     return(
         <div className="bg-dark-grey px-4 py-[60px] relative md:px-8 md:pb-10  xl:px-36 xl:pt-[84px] xl:pb-[92px] ">
 
@@ -29,7 +44,7 @@ function ContactSection(){
                         <p className="text-mobm text-grey md:text-m">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
                     </div>
 
-                    <form noValidate className="group">
+                    <form noValidate className="group" onSubmit={handleSubmit}> 
                         <label>
                             <div className="relative">
                                 <input 
@@ -39,7 +54,9 @@ function ContactSection(){
                                 placeholder="NAME"
                                 required
                                 autoComplete="on"
-                                pattern=".{3,}" 
+                                pattern=".{3,}"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)} 
                                 className="peer bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-4  outline-none invalid:[&:not(:placeholder-shown):not(:focus)]:border-light-red valid:border-green  " />
                                 <span className="hidden text-right text-sm text-light-red peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                                 Please enter a valid name
@@ -57,6 +74,8 @@ function ContactSection(){
                                 required
                                 autoComplete="on"
                                 pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 className="peer bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-4 mt-8 outline-none invalid:[&:not(:placeholder-shown):not(:focus)]:border-light-red valid:border-green   " />
                                 <span className="hidden text-right text-sm text-light-red peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                                     Please enter a valid email address
@@ -71,11 +90,13 @@ function ContactSection(){
                             id="message"
                             placeholder="MESSAGE"
                             required
-                            pattern=".{7,}" 
+                            pattern=".{7,}"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)} 
                             className="bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-[81px] mt-8 resize-none outline-none  invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500  " />
                         </label>
                         <div className="text-right mb-[99px] mt-8">
-                            <span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">SEND MESSAGE</span>
+                            <span onClick={submitForm}  className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">SEND MESSAGE</span>
                         </div>
                     </form>
                 </div>
