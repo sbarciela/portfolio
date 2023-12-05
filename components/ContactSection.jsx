@@ -8,9 +8,29 @@ function ContactSection(){
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    const handleSubmit = () => {
-        console.log("Call send API here")
-      }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        await fetch("/api/send", {
+            method: "POST",
+            body: JSON.stringify({ name, email, message }),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                    if (data && data.id) {
+                    alert(`Thank you for your interest ${name}! We will get back to you soon!`);
+                    setName("");
+                    setEmail("");
+                } else {
+                    alert("Apologies! Please try again.");
+                }
+            })
+            .catch((err) => {
+               
+                alert("Ooops! unfortunately some error has occurred.");
+            });
+        return true;
+    };
     
     const submitForm =()=>{
         handleSubmit()
