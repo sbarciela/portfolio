@@ -17,4 +17,4 @@ export const EmailTemplate = ({
           Coffee
       </p>
     </div>
-  );​
+  );

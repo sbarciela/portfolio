@@ -1,3 +1,4 @@
+
 import Image from "next/image"
 import IconSection from "./IconSection"
 import InvalidIcon from '../public/invalidIcon.svg'
@@ -8,8 +9,15 @@ function ContactSection(){
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    const handleSubmit = async () => {
+        
+        
+    
+        if (name == "" && email == "") {
+            
+            alert("Please enter both name & email id");
+            return false;
+        }
     
         await fetch("/api/send", {
             method: "POST",
@@ -17,7 +25,8 @@ function ContactSection(){
         })
             .then((res) => res.json())
             .then((data) => {
-                    if (data && data.id) {
+                
+                if (data && data.id) {
                     alert(`Thank you for your interest ${name}! We will get back to you soon!`);
                     setName("");
                     setEmail("");
