@@ -3,48 +3,39 @@ import Image from "next/image"
 import IconSection from "./IconSection"
 import InvalidIcon from '../public/invalidIcon.svg'
 import { useState } from "react"
+import { sendContactForm } from "../lib/api";
+import { toast } from "sonner";
 
 function ContactSection(){
     const[name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+    const [isloading, setIsLoading] = useState(false)
+    const [errorState, setErrorState] = useState(null)
 
-    const handleSubmit = async () => {
-        
-        
-    
-        if (name == "" && email == "") {
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setIsLoading(true)
+       
+
+
+        try {
+            await sendContactForm({name, email, message})
+            setName("")
+            setEmail("")
+            setMessage("")
+            setErrorState(null)
+            setIsLoading(false)
+            toast.success("Message Sent!")
             
-            alert("Please enter both name & email id");
-            return false;
-        }
-    
-        await fetch("/api/send", {
-            method: "POST",
-            body: JSON.stringify({ name, email, message }),
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                
-                if (data && data.id) {
-                    alert(`Thank you for your interest ${name}! We will get back to you soon!`);
-                    setName("");
-                    setEmail("");
-                } else {
-                    alert("Apologies! Please try again.");
-                }
-            })
-            .catch((err) => {
-               
-                alert("Ooops! unfortunately some error has occurred.");
-            });
-        return true;
-    };
-    
-    const submitForm =()=>{
-        handleSubmit()
-    }  
-
+           
+          } catch (error) {
+            setIsLoading(false)
+           toast.error("Oops!Something went wrong")
+            
+    }
+}
+   console.log(errorState)
     
 
     return(
@@ -71,6 +62,7 @@ function ContactSection(){
                     <div className="text-center xl:text-left" id="contact">
                         <h2 className="text-mobh text-white mb-5 md:text-[72px] md:leading-[72px] md:tracking-[-2.05px] ">Contact</h2>
                         <p className="text-mobm text-grey md:text-m">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+                        {errorState==null?null:<span>{errorState}</span>}
                     </div>
 
                     <form noValidate className="group" onSubmit={handleSubmit}> 
@@ -125,7 +117,7 @@ function ContactSection(){
                             className="bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-[81px] mt-8 resize-none outline-none  invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500  " />
                         </label>
                         <div className="text-right mb-[99px] mt-8">
-                            <span onClick={submitForm}  className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">SEND MESSAGE</span>
+                            <button type="submit"  className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">{isloading?<span>LOADING</span>:<span>SEND MESSAGE</span>}</button>
                         </div>
                     </form>
                 </div>

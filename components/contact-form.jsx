@@ -9,7 +9,7 @@ export const EmailTemplate = ({
           {name} has submitted the contact form on your website. Their
           email is {email}!
           the message is: 
-          {message}
+          
       </p>
       <p>
           Regards,

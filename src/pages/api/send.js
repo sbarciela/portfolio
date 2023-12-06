@@ -1,22 +1,28 @@
-import { EmailTemplate } from '../../../components/contact-form';
-import { Resend } from 'resend';
+import { EmailTemplate } from "../../../components/contact-form";
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY)
 
-export default async (req, res) => {
-  try {
-    const { name, email, message } = JSON.parse(req.body);
+export async function POST(request) {
+    try {
+        const body = await request.json();
+        console.log("body", body)
+        const { email, name, message } = body;
+        const data = await resend.emails.send({
+            from: "Brett <noreply@sbarciela.ar>",
+            to: email,
+            subject: "This is Brett Westwood",
+            react: EmailTemplate({ firstName: name }),
 
-    const data = await resend.sendEmail({
-        from: `${process.env.FROM_EMAIL}`,
-        to: `${process.env.TO_EMAIL}`,
-        subject: "🎉New submission to your contact form!",
-        html: "",
-        react: EmailTemplate({ name, email, message })
-    });
+        });
 
-    res.status(200).json(data);
-  } catch (error) {
-    res.status(400).json(error);
-  }
-};
+        if(data.status === 'success') {
+            return NextResponse.json({ message: 'Email Successfully Sent!' })
+        }
+        return NextResponse.json(data)
+    } catch (error) {
+           console.log('error', error)
+    }
+
+}
