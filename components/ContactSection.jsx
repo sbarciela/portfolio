@@ -5,6 +5,7 @@ import InvalidIcon from '../public/invalidIcon.svg'
 import { useState } from "react"
 import { sendContactForm } from "../lib/api";
 import { toast } from "sonner";
+import Loader from "./Loader";
 
 function ContactSection(){
     const[name, setName] = useState("")
@@ -117,7 +118,7 @@ function ContactSection(){
                             className="bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-[81px] mt-8 resize-none outline-none  invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500  " />
                         </label>
                         <div className="text-right mb-[99px] mt-8">
-                            <button type="submit"  className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">{isloading?<span>LOADING</span>:<span>SEND MESSAGE</span>}</button>
+                            <button type="submit"  className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] cursor-pointer xl:hover:text-green group-invalid:pointer-events-none group-invalid:opacity-30">{isloading?<Loader/>:<span>SEND MESSAGE</span>}</button>
                         </div>
                     </form>
                 </div>
