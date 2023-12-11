@@ -31,11 +31,11 @@ function ContactSection(){
            
           } catch (error) {
             setIsLoading(false)
-           toast.error("Oops!Something went wrong")
+           toast.error("Oops! Something went wrong")
             
     }
 }
-   console.log(errorState)
+   
     
 
     return(
@@ -94,7 +94,7 @@ function ContactSection(){
                                 placeholder="EMAIL"
                                 required
                                 autoComplete="on"
-                                pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
+                                pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 className="peer bg-inherit text-white/[.50] placeholder:text-white/[.50] w-full border-b border-white pl-6 pb-4 mt-8 outline-none invalid:[&:not(:placeholder-shown):not(:focus)]:border-light-red valid:border-green   " />
