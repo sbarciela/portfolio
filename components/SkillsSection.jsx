@@ -7,23 +7,23 @@ function SkillsSection (){
             <div className="grid grid-cols-1 gap-6 py-10 md:py-[52px] md:grid-cols-2 md:gap-[52px] xl:py-[72px] xl:grid-cols-3 xl:gap-[58px]">
                 <div className="text-center md:text-left ">
                     <h2 className="text-white text-[32px] font-bold leading-[40px] tracking-[-1px] md:text-hl ">HTML</h2>
-                    <p className="text-mobm text-grey md:text-m">3 Years Experience</p>
+                    <p className="text-mobm text-grey md:text-m">2 Years Experience</p>
                 </div>
                 <div className="text-center md:text-left ">
                     <h2 className="text-white text-[32px] font-bold leading-[40px] tracking-[-1px] md:text-hl ">CSS</h2>
-                    <p className="text-mobm text-grey md:text-m">3 Years Experience</p>
+                    <p className="text-mobm text-grey md:text-m">2 Years Experience</p>
                 </div>
                 <div className="text-center md:text-left ">
                     <h2 className="text-white text-[32px] font-bold leading-[40px] tracking-[-1px] md:text-hl ">Javascript</h2>
-                    <p className="text-mobm text-grey md:text-m">3 Years Experience</p>
+                    <p className="text-mobm text-grey md:text-m">2 Years Experience</p>
                 </div>
                 <div className="text-center md:text-left ">
                     <h2 className="text-white text-[32px] font-bold leading-[40px] tracking-[-1px] md:text-hl ">Accesibility</h2>
-                    <p className="text-mobm text-grey md:text-m">3 Years Experience</p>
+                    <p className="text-mobm text-grey md:text-m">2 Years Experience</p>
                 </div>
                 <div className="text-center md:text-left ">
                     <h2 className="text-white text-[32px] font-bold leading-[40px] tracking-[-1px] md:text-hl ">React</h2>
-                    <p className="text-mobm text-grey md:text-m">3 Years Experience</p>
+                    <p className="text-mobm text-grey md:text-m">2 Years Experience</p>
                 </div>
                 <div className="text-center md:text-left ">
                     <h2 className="text-white text-[32px] font-bold leading-[40px] tracking-[-1px] md:text-hl ">Next Js</h2>
