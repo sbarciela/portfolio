@@ -126,6 +126,38 @@ function Projects(){
                 <a href="https://github.com/sbarciela/todo_list" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span></a>
             </div>
         </div>
+
+         {/**project5 */}
+       <div className="md:mb-10">
+            <div className="projectContainer relative">
+                <Image
+                src="/refribaires-project.png"
+                width={1080}
+                height={800}
+                alt="Arrow"
+                className="imageProject"
+                            
+                />
+                
+                <div className="linksContainer absolute">
+                    <a href="https://refribaires.vercel.app/" target="_blank"><span className="hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                    <a href="https://github.com/sbarciela/refribaires" target="_blank"><span className=" hover:text-green cursor-pointer text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW CODE</span></a>
+                </div>
+            </div>
+            
+
+            <h2 className="text-hm text-white mt-5">REFRIBAIRES LANDING PAGE</h2>
+            <div className="mt-[7px]">
+                <span className="text-m text-grey">HTML</span>
+                <span className="text-m text-grey ml-[18px]">CSS</span>
+                <span className="text-m text-grey ml-[18px]">JS</span>
+            </div>
+            <div className="flex mt-5 xl:hidden">
+                <a href="https://refribaires.vercel.app/" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px]">VIEW PROJECT</span></a>
+                <a href="https://github.com/sbarciela/refribaires" target="_blank"><span className=" text-mobm font-bold leading-[26px] tracking-[2.286px] text-white underline decoration-green decoration-2 underline-offset-[10px] ml-8">VIEW CODE</span></a>
+            </div>
+        </div>
+
         </>
     )
 }
